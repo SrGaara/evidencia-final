@@ -15,7 +15,7 @@ public class MainActivity extends AppCompatActivity {
     Button siguiente2;
     Button siguiente3;
     Spinner menu;
-    String[] datos = {"menu", "ubicacion", "invitados", "cosplay"};
+   // String[] datos = {"menu", "ubicacion", "invitados", "cosplay"};
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

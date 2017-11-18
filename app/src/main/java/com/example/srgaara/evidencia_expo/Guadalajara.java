@@ -1,5 +1,6 @@
 package com.example.srgaara.evidencia_expo;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -12,7 +13,7 @@ import java.util.ArrayList;
 
 public class Guadalajara extends AppCompatActivity {
     Spinner menu;
-    String[] datos = {"menu", "ubicacion", "invitados", "cosplay"};
+    String[] datos = {"menu", "ubicacion", "invitados GDL", "cosplay GDL"};
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -28,17 +29,20 @@ public class Guadalajara extends AppCompatActivity {
             switch (i){
 
                 case 1:
-
+                    Intent intent = new Intent(Guadalajara.this, ubicacion_gdl.class);
+                    startActivity(intent);
                     break;
 
                 case 2:
-
+                    Intent intent1 = new Intent(Guadalajara.this, invitados_gdl.class);
+                    startActivity(intent1);
 
                     break;
 
                 case 3:
 
-
+                  //  Intent intent3 = new Intent(Guadalajara.this, cosplay_gdl.class);
+                    //startActivity(intent3);
                     break;
 
             }

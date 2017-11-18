@@ -9,15 +9,16 @@ import android.widget.ArrayAdapter;
 import android.widget.Spinner;
 
 /**
- * Created by SR. Gaara on 13/11/2017.
+ * Created by SR. Gaara on 18/11/2017.
  */
-public class ubicacion_cdmx extends AppCompatActivity {
+
+public class invitados_mty extends AppCompatActivity {
     Spinner menu;
-    String[] datos = {"menu", "ubicacion", "invitados", "cosplay"};
+    String[] datos = {"menu", "ubicacion", "invitados MTY", "cosplay MTY"};
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.ubicacion_cdmx);
+        setContentView(R.layout.invitados_mty);
 
 
         menu = (Spinner)findViewById(R.id.menu);
@@ -29,25 +30,24 @@ public class ubicacion_cdmx extends AppCompatActivity {
                 switch (i){
 
                     case 1:
-                        Intent intent = new Intent(ubicacion_cdmx.this, ubicacion_cdmx.class);
+                        Intent intent = new Intent(invitados_mty.this, ubicacion_mty.class);
                         startActivity(intent);
                         break;
 
                     case 2:
-                        Intent intent1 = new Intent(ubicacion_cdmx.this, invitados_cdmx.class);
+                        Intent intent1 = new Intent(invitados_mty.this, invitados_mty.class);
                         startActivity(intent1);
 
                         break;
 
                     case 3:
 
-                      //  Intent intent3 = new Intent(ubicacion_cdmx.this, cosplay_cdmx.class);
-                        //startActivity(intent3);
+                        //Intent intent3 = new Intent(invitados_mty.this, cosplay_mty.class);
+                      //  startActivity(intent3);
                         break;
 
                 }
             }
-
             @Override
             public void onNothingSelected(AdapterView<?> adapterView) {
             };
